@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+
+/* START OF INTRO BOX SECTION  */
+.box {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 275px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #b62ca8;
+}
+
+.text1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: "Inria Sans";
+  font-size: 65px;
+  padding-top: 65px;
+}
+
+.text2 {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* END OF INTRO BOX SECTION */
+
+/* START OF WHO WE ARE SECTION  */
+.container-who-we-are {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.who-are-we-text {
+  padding-left: 80px;
+  padding-right: 100px;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.who-are-we-text h2 {
+  color: #b62ca8;
+  font-family: "Inria Sans";
+  font-weight: 100;
+  font-size: 100px;
+}
+
+.team-image img {
+  width: 600px;
+  height: 400px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+}
+
+.our-services-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-technologies-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-services h3 {
+  font-size: 40px;
+  font-family: "Inria sans";
+  color: #b62ca8;
+}
+
+.our-technologies h3 {
+  font-size: 40px;
+  font-family: "Inria sans";
+  color: #b62ca8;
+}
+/* END OF WHO WE ARE SECTION  */
+
+/*CSS FOR OUR SERVICES*/
+.images-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  background: white;
+  position: relative;
+}
+
+.images-carousel::before,
+.images-carousel::after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, white);
+  content: "";
+  z-index: 2;
+}
+
+.images-carousel::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, white);
+}
+
+.images-carousel::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, white);
+}
+
+.images-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.images-slide img {
+  height: 150px;
+  margin: 0 40px;
+}
+/*CSS FOR OUR SERVICES END*/
+
+/* CSS FOR OUR TECHNOLOGIES */
+
+.image-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  background: white;
+  position: relative;
+}
+
+.image-carousel::before,
+.image-carousel::after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, white);
+  content: "";
+  z-index: 2;
+}
+
+.image-carousel::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, white);
+}
+
+.image-carousel::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, white);
+}
+
+.image-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.image-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* CSS FOR OUR TECHNOLOGIES END */

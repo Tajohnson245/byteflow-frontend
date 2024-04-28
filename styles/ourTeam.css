@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* START OF HEADER SECTION */
+
+li,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.text2 a {
+  color: white;
+}
+
+.text2 a:hover {
+  color: #e2a1db;
+  transition: all 0.3s ease 0s;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  padding: 30px 10%;
+}
+
+.byteflow-logo {
+  cursor: pointer;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #b62ca8;
+}
+
+button {
+  margin-left: 20px;
+  padding: 10px 25px;
+  background-color: #b62ca8;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(98, 12, 111, 0.8);
+}
+
+/* END OF HEADER SECTION */
+
+/* START OF INTRO BOX SECTION  */
+.box {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 275px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #7b17ae, #ac28cd);
+}
+
+.text1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: "Inria Sans";
+  font-size: 65px;
+  padding-top: 50px;
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text2 {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/* END OF INTRO BOX SECTION */
+
+/* START OF TEAM SECTION */
+
+.team-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.team-member {
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.team-member img {
+  width: 400px;
+  height: 440px;
+  border-radius: 15%;
+}
+
+/* END OF TEAM SECTION */
+
+/* START OF JOIN OUR TEAM SECTION */
+
+.join-team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; /* Shift the entire container down */
+  padding-bottom: 50px;
+  background-color: #ac28cd;
+}
+
+.join-team-container h1 {
+  padding-bottom: 30px;
+  font-size: 80px;
+}
+
+.join-form {
+  width: 100%;
+  max-width: 600px; /* Enlarge the form */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increase space between form groups */
+  display: flex;
+  justify-content: space-between; /* Even space between form elements */
+}
+
+.form-group label {
+  flex: 1;
+  margin-left: 10px; /* Align labels to the left */
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.form-group .name-group,
+.form-group .contact-group {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.form-group .name-group input,
+.form-group .contact-group input {
+  width: 100%; /* Expand input fields to fill available space */
+  padding: 15px; /* Enlarge padding */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid #ccc; /* Enlarge border */
+  border-radius: 8px; /* Enlarge border radius */
+  background-color: white;
+}
+
+button {
+  width: 93%;
+  margin-right: 10px;
+  padding: 15px; /* Enlarge padding */
+  font-size: 18px; /* Increase font size */
+  border: 2px solid #ccc; /* Enlarge border */
+  border-radius: 8px; /* Enlarge border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c51fb7;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* END OF JOIN OUR TEAM SECTION */
+
+/* START OF FOOTER  */
+
+.footer {
+  padding: 70px 0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  padding: 50px;
+}
+
+#horizontal-line {
+  height: 2px;
+  background-color: black;
+}
+
+.footer-column p {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.footer-column h2 {
+  font-family: sans-serif;
+}
+
+/* END OF THE FOOTER */
+

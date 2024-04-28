@@ -1,0 +1,84 @@
+/* START OF HEADER SECTION */
+
+li,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.text2 a {
+  color: white;
+}
+
+.text2 a:hover {
+  color: #e2a1db;
+  transition: all 0.3s ease 0s;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  padding: 30px 10%;
+}
+
+.byteflow-logo {
+  cursor: pointer;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #b62ca8;
+}
+
+button {
+  margin-left: 20px;
+  padding: 10px 25px;
+  background-color: #b62ca8;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(98, 12, 111, 0.8);
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav_links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .connect-btn {
+    margin-top: 10px;
+    float: center;
+    margin-left: 100px;
+  }
+}
